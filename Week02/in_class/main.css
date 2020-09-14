@@ -1,0 +1,49 @@
+@media screen and (max-width: 550px) {
+    body {
+      background-color: lightblue;
+    }
+    #p {
+        padding: 10px;
+        background-color: lightgrey;
+        border: solid black;
+        margin-top: 10px;
+    }
+    #Mac {
+        width: 100%;
+        float: left;
+        margin-bottom: 2px;
+    }
+    
+    #Windows {
+        width: 100%;
+        float: left;
+        margin-top: 2px;
+    }
+    img {
+        border: 2px solid black;
+      }
+  }
+
+@media screen and (min-width: 550px) {
+    body {
+      background-color: lightgreen;
+    }
+    #p {
+        padding: 10px;
+        background-color: white;
+        border: solid black;
+        margin-top: 10px;
+    }
+    #Mac {
+        width: 49.3%;
+        float: left;
+    }
+    
+    #Windows {
+        width: 49.3%;
+        float: right;
+    }
+    img {
+        border: 2px solid black;
+      }
+  }
