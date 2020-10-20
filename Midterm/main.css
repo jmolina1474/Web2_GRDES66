@@ -1,0 +1,104 @@
+@import url("navbar.css");
+@import url("contact.css");
+
+body {
+    background-color: #8dd4eb;
+}
+
+div {
+    padding: 15px;
+    background-color: #a7e9a7;
+}
+.div {
+    border: solid rgb(209, 25, 219) 2px;
+    margin-top: 20px;
+    font-family: 'Comic Neue', cursive;
+}
+
+.title {
+    background-color: white;
+    margin: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+}
+
+.grid-item1 {
+    grid-column: 1/ span 2;
+}
+
+.grid-item2 {
+    grid-row: 2/ span 2;
+}
+
+.grid-item3 {
+    grid-row: 2/ span 1;
+    grid-column: 2/ span 1;
+}
+
+.pad {
+    padding: 1px 5px 0px 5px;
+}
+
+.column {
+    flex: 100%;
+    padding: 5px;
+  }
+
+.img {
+    max-width: 100%;
+}
+
+.img2 {
+        max-width: 100%;
+}
+
+.p {
+    max-width: 100%;
+    text-align: left;
+    padding: 5px;
+}
+
+.p2 {
+    max-width: 100%;
+    text-align: left;
+    margin-top: 0px;
+}
+
+@media (min-width: 768px){ 
+    .grid-container {
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .row {
+        display: flex;
+        margin: 0px -10px;
+      }
+      
+    
+      .column {
+        flex: 100%;
+        padding: 5px;
+      }
+      
+    
+    .img {
+        max-width: 100%;
+    }
+
+    .p {
+        width: 100%;
+    }
+}
+
+@media (min-width: 820px) {
+        .grid-container {
+            margin: auto;
+            height: auto;
+        }
+    }

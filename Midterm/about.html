@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="Logo.png" class="logo" alt="logo"></a>
+
+            <label for="toggleAssist">
+                <img src="Menu-Icon.png" class="toggle-button" alt="hamburger menu toggle button">
+              </label>
+              <input type="checkbox" id="toggleAssist">
+            
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="products.html">Products</a></li>
+            </ul>
+          </nav>
+    </header>
+
+    <main>
+        <br>
+        <div class="div">
+            <h1>About Us</h1>
+            <p>Angie's Party Supply Store is a family owned business owned by Angie who sells party supplies that are to be rented, delivered, and installed. The party supply store supplies Chairs, Tables, Canopies, Outdoor Heaters, Balloons, and many more party related items.</p>
+            <p>Call us at (323) - 290 - 0865</p>
+        </div>
+        <br>
+        <div class="contact-form div">
+            <h1>Contact Us</h1>
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.."> 
+                
+                <label for="email">Phone Number</label>
+                <input type="text" id="Number" name="number" placeholder="(123) - 456 - 7890">
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+            
+              </form>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
