@@ -1,0 +1,60 @@
+body {
+    margin: 0px;
+}
+
+header {
+    width: 100%;
+    background-color: lightgrey;
+}
+
+.logo {
+    width: 100px;
+    margin: 10px;
+}
+
+.toggle-button {
+    width: 80px;
+    float: right;
+    margin: 10px;
+}
+
+#toggleAssist,
+ul.nav-links {
+    display: none;
+}
+
+#toggleAssist:checked + ul.nav-links {
+    display: block;
+}
+
+
+ul.nav-links {
+    list-style: none;
+    margin: 0px;
+    padding: 20px;
+}
+
+.nav-links li {
+    padding: 10px 0px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.nav-links a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+}
+
+section {
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+}

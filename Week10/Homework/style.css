@@ -1,0 +1,42 @@
+@import url("navbar.css");
+
+body {
+    background-color: lightblue;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding-top: 20px;
+  }
+  
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .container {
+    position: relative;
+    display: none;
+  }
+
+ .bigIMG {
+     max-width: 800px;
+      margin: auto;
+      padding: 20px;
+  }
+
+  .row {
+      max-width: 800px;
+      margin: auto;
+  }
