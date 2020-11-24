@@ -34,22 +34,16 @@ let imgChange = function(){
         counter++;
         if(counter === 3) {counter = 0}
         carouselIMG.src = images[counter];
-    
+        
         if(subSelect.value === "Kittens"){
-            let carouselIMG = document.getElementById("carouselIMG")
-            counter = 0
             carouselIMG.src = images2[counter];
         }
 
         if(subSelect.value === "Puppies"){
-            let carouselIMG = document.getElementsById("carouselIMG")
-            counter = 0
             carouselIMG.src = images[counter];
         }
 
         if(subSelect.value === "Quokkas"){
-            let carouselIMG = document.getElementById("carouselIMG")
-            counter = 0
             carouselIMG.src = images3[counter];
         }
     }
@@ -89,3 +83,6 @@ let categoryUpdate = function(){
 }
 
 catSelect.addEventListener("change", categoryUpdate);
+subSelect.addEventListener("change", function(){
+    counter = 0;
+})
