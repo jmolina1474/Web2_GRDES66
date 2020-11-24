@@ -9,12 +9,6 @@ let images = [
         "Puppy3.jpg"
     ]
 
-let images1 = [
-        "Puppy1.jpg",
-        "Puppy2.jpg",
-        "Puppy3.jpg"
-    ]
-
 let images2 = [
         "Kitten1.jpg",
         "Kitten2.jpg",
@@ -34,21 +28,19 @@ let imgChange = function(){
         counter++;
         if(counter === 3) {counter = 0}
         carouselIMG.src = images[counter];
-        
         if(subSelect.value === "Kittens"){
             carouselIMG.src = images2[counter];
         }
-
-        if(subSelect.value === "Puppies"){
+        else if(subSelect.value === "Puppies"){
             carouselIMG.src = images[counter];
         }
-
-        if(subSelect.value === "Quokkas"){
+        else if(subSelect.value === "Quokkas"){
             carouselIMG.src = images3[counter];
         }
     }
 
 window.addEventListener("load", function(){
+        categoryUpdate();
         setInterval(imgChange, 3000);
     })
 
