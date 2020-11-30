@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML JQuiery</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="grid-container">
+
+            <div class="grid-item1">
+                <img src="Puppy1.jpg" alt="Puppy1" class="pup1">
+                <button id="item1-add">Add this Image</button>
+                <button id="item1-remove">Remove this Image</button>
+            </div>
+
+            <div class="grid-item2">
+                <img src="Puppy2.jpg" alt="Puppy2" class="pup2">
+                <button id="item2-add">Add this Image</button>
+                <button id="item2-remove">Remove this Image</button>
+            </div>
+
+            <div class="grid-item3">
+                <img src="Puppy3.jpg" alt="Puppy3" class="pup3">
+                <button id="item3-add">Add this Image</button>
+                <button id="item3-remove">Remove this Image</button>
+            </div>
+
+            <div class="grid-item4">
+                <img src="Puppy4.jpg" alt="Puppy4" class="pup4">
+                <button id="item4-add">Add this Image</button>
+                <button id="item4-remove">Remove this Image</button>
+            </div>
+
+            <div class="grid-item5">
+                <button id="borders-add">Add Borders</button>
+                <button id="borders-remove">Remove Borders</button>
+            </div>
+
+        </div>
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#item1-add").click(function(){
+               $(".pup1").toggle(); 
+            })
+
+            $("#item1-remove").click(function(){
+                $(".pup1").hide();
+            });
+
+            $("#item2-add").click(function(){
+               $(".pup2").toggle(); 
+            })
+
+            $("#item2-remove").click(function(){
+                $(".pup2").hide();
+            });
+
+            $("#item3-add").click(function(){
+               $(".pup3").toggle(); 
+            })
+
+            $("#item3-remove").click(function(){
+                $(".pup3").hide();
+            });
+
+            $("#item4-add").click(function(){
+               $(".pup4").toggle(); 
+            })
+
+            $("#item4-remove").click(function(){
+                $(".pup4").hide();
+            });
+
+            $("#borders-add").click(function(){
+                $(".pup1").addClass("borders");
+                $(".pup2").addClass("borders");
+                $(".pup3").addClass("borders");
+                $(".pup4").addClass("borders");
+            });
+
+            $("#borders-remove").click(function(){
+                $(".pup1").removeClass("borders");
+                $(".pup2").removeClass("borders");
+                $(".pup3").removeClass("borders");
+                $(".pup4").removeClass("borders");
+            });
+
+        });
+    </script>
+</body>
+</html>
