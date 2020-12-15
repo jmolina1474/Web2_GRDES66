@@ -1,0 +1,440 @@
+/* Landing Page CSS -------------------------------------------------------------------*/
+body {
+  background-color: #F38B00;
+}
+
+.big-img {
+  margin: auto;
+  max-width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.small-IMG {
+  margin: auto;
+  max-width: 100%;
+  padding-bottom: 10px;
+}
+
+.title {
+  text-align: center;
+  color: rgb(19, 98, 139);
+  padding-top: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 40px;
+}
+
+.title2 {
+  text-align: center;
+  color: rgb(19, 98, 139);
+  padding-top: 5px;
+  padding-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 40px;
+}
+
+.title3 {
+  text-align: left;
+  color: #F38B00;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  margin-bottom: -10px;
+}
+
+.title4 {
+  text-align: left;
+  color: #F38B00;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+
+.div {
+    max-width: 920px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.big-div {
+  background-color: #f5f5f5;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+.div-blog {
+    max-width: 750px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.div-donate {
+    max-width: 500px;
+    margin: auto;
+}
+
+.div-contact {
+  max-width: 600px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.div-about {
+  max-width: 600px;
+}
+
+.subtitle {
+  color: #F38B00;
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.subtitle2 {
+  color: #F38B00;
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  text-align: left;
+}
+
+.par {
+  color: black;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.par2 {
+  color: black;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-align: left;
+}
+
+.par3 {
+  color: black;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-align: left;
+}
+
+/* Nav Bar CSS ------------------------------------------------------------------------*/
+img.nav-logo {
+    max-width: 100px;
+    width: 100px;
+}
+
+img.toggle-img {
+    width: 40px;
+    margin-top: -5px;
+}
+
+input#Toggle{
+    display: none;
+}
+
+label[for="Toggle"] {
+    float: right;
+}
+
+input#Toggle:checked + ul {
+    display: block;
+}
+
+nav {
+  background-color: #F38B00;
+  padding-bottom: 6px;
+  padding-top: 6px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 20px 0px 0px;
+    display: none;
+}
+
+nav ul li {
+    padding: 20px 0px;
+    border-bottom: 2px solid white;
+}
+
+nav ul li:last-child {
+    border-bottom: none;
+}
+
+nav ul a {
+    background-color: #F2F2F2;
+    border: #F38B00 solid 2px;
+    border-radius: 5px;
+    color: rgb(19, 98, 139);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Lato', 'sans-seriff';
+    font-weight: 900;
+    padding: 2px 3px;
+}
+
+.nav-logo {
+  border-radius: 3px;
+  background-color: #f2f2f2;
+}
+
+@media(min-width: 768px){
+    label[for="Toggle"]{
+         display: none;
+     }
+
+     nav {
+       padding-bottom: 4px;
+       padding-top: 0px;
+     }
+ 
+     nav ul {
+         display: block;
+         float: right;
+         padding: 0px;
+     }
+ 
+     nav ul li {
+         border: none;
+         display: inline-block;
+         margin-right: 20px;
+         padding: 10px 0px;
+     }
+     
+     nav ul a {
+       font-size: 15px;
+     }
+ }
+
+/* Grid CSS ---------------------------------------------------------------------------*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    margin: auto;
+    max-width: 920px;
+    padding-top: 10px;
+}
+
+.grid-item1 {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.grid-item2 {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.grid-item3 {
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+}
+
+#desc1 {
+  display: none;
+  max-width: 300px;
+}
+
+#desc2 {
+  display: none;
+  max-width: 300px;
+}
+
+#desc3 {
+  display: none;
+  max-width: 300px;
+}
+
+@media(max-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 10px;
+        column-gap: 10px;
+        margin: auto;
+        max-width: 300px;
+    }
+    
+    .grid-item1 {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 2;
+    }
+    
+    .grid-item2 {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 2;
+    }
+    
+    .grid-item3 {
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 2;
+    }
+}
+
+/* Contact Form CSS ---------------------------------------------------------------------*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #F38B00;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #F38B4B;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  #contact {
+    display: none;
+  }
+
+  .btncon {
+    background-color: #F38B00;
+    color: white;
+    padding: 12px;
+    margin-left: 158px;
+    border: none;
+    max-width: 200px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: 'Lato', 'sans-seriff';
+}
+  
+  .btncon:hover {
+    background-color: #F38B4B;
+  }
+
+  @media (max-width: 768px) {
+    .btncon {
+      background-color: #F38B00;
+      color: white;
+      padding: 12px;
+      margin-left: 0px;
+      border: none;
+      max-width: 200px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 17px;
+      font-family: 'Lato', 'sans-seriff';
+  }
+
+  }
+
+  /* Donations CSS ---------------------------------------------------------------------- */
+
+  .row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 10px -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%;
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%;
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%;
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color: #f5f5f5;
+    padding: 5px 20px 15px 20px;
+    font-family: 'Lato', 'sans-seriff';
+  }
+  
+  input[type=text] {
+    background-color: #f5f5f5;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 3px solid #F38B00;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #F38B00;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: 'Lato', 'sans-seriff';
+  }
+  
+  .btn:hover {
+    background-color: #F38B4B;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donations</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="https://images.squarespace-cdn.com/content/589b6572be6594fd41fcfa1b/1598303443468-SWZ8F72H1JCG7Z4BYAS3/Logo+Fade+Long+with+Transparent+Background.png?format=1500w&content-type=image%2Fpng" alt="Our logo" class="nav-logo"></a>
+
+            <label for="Toggle">
+                <img src="https://static.thenounproject.com/png/659803-200.png" alt="menu toggle" class="toggle-img">
+            </label>
+            <input type="checkbox" id="Toggle">
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="donations.html">Donations</a></li>                
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="big-div">
+        <div class="row">
+            <div class="col-75">
+              <div class="container div-donate">
+                <form action="/action_page.php">
+          
+                  <div class="row">
+                    
+          
+                    <div class="col-50">
+                      <h1 class="title2">Donate</h1>
+                      <h3 class="title4">Payment</h3>
+                      <label for="email">Email</label>
+                      <input type="text" id="amount" name="email" placeholder="username@email.com">
+                      <label for="fname">Amount to Donate</label>
+                      <input type="text" id="amount" name="amount" placeholder="$50.00">
+                      <label for="cname">Name on Card</label>
+                      <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                      <label for="ccnum">Credit card number</label>
+                      <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                      <label for="expmonth">Exp Month</label>
+                      <input type="text" id="expmonth" name="expmonth" placeholder="September">
+          
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="expyear">Exp Year</label>
+                          <input type="text" id="expyear" name="expyear" placeholder="2018">
+                        </div>
+                        <div class="col-50">
+                          <label for="cvv">CVV</label>
+                          <input type="text" id="cvv" name="cvv" placeholder="352">
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div>
+                  <button class="btn" id="donatebtn">Donate</button>
+                </form>
+              </div>
+            </div>
+            </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
